@@ -17,16 +17,17 @@
 	STYLESHEETS 
 	============================== -->
 	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- TYPOGRAPHY -->
-	<link rel="stylesheet" id="font-switch" href="css/typography/typography-1.css">
+	<link rel="stylesheet" id="font-switch" href="css/typography.css">
 
 	<!-- MAIN -->
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- TEMPLATE COLORS -->
-	<link rel="stylesheet" id="color-switch" href="css/colors/blue.css">
+	<link rel="stylesheet" id="color-switch" href="css/blue.css">
 
 	<!-- RESPONSIVE FIXES -->
 	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
@@ -36,6 +37,27 @@
 		<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="images/icon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="images/icon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="images/icon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/icon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/icon/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="images/icon/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="images/icon/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="images/icon/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="images/icon/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="images/icon/mstile-310x310.png" />
+
 </head>
 <body class="body-container">
 <!-- =========================
@@ -44,14 +66,7 @@
 <div class="navbar navbar-nemo navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nemo-navigation" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar icon-bar-top"></span>
-				<span class="icon-bar icon-bar-middle"></span>
-				<span class="icon-bar icon-bar-bottom"></span>
-			</button>
-
-			<!-- YOUR LOGO -->
+			
 			<a class="navbar-brand" href="#">
 				<img src="images/logo-alt.png" alt="">
 			</a>
@@ -60,6 +75,8 @@
 		<div class="collapse navbar-collapse" id="nemo-navigation">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#home">Home</a></li>
+				<li><a href="#what-we-do">What We Do</a></li>
+				<li><a href="#what-we-think">What We Think</a></li>
 			</ul>
 		</div>
 	</div>
@@ -68,29 +85,86 @@
 <!-- =========================
      HOME
 ============================== -->
-<section class="home book-home dark-image-bg gradient-overlay" id="home">
+<section class="base-home dark-image-bg gradient-overlay" id="home">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-1 mb50 col-md-push-5">
 				
-				<h1 style="margin-top:200px" class="heading-text">Intentional Machine Intelligence</h1>
+				<h1 class="heading-text">Intentional Machine Intelligence</h1>
 
 			</div>
 
 			<div class="col-md-5 mb50 col-md-pull-7">
-				<img src="images/logo.png" style="max-width: 100%" alt="" class="img-responsive img-center">
+				<img src="images/logo.png" style="margin: 0 auto;" alt="" class="img-responsive img-center">
 			</div>
 
 		</div>	<!-- /.row -->
 	</div>
 </section>
 
+<section class="white-bg text-center padding-120-75" id="what-we-do">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
+				<div class="section-heading">
+
+					<h2 class="heading-text">What We Do<span style="color: #037cb9">.</span></h2>
+					<p>Inphase.ai is focussed on building the next generation of intelligent machines. Although we understand the current excitement surrounding deep neural networks, we believe that this is but one possible method of machine learning, and are interested in pursuing alternatives that don't rely so heavily on traditional designs.</p>
+					<p>We are working on a unique approach which we believe could be the foundation of an artificial general intelligence. Regardless of whether we are correct, we are concerned about the potential implications of such an innovation, and so are committed to using what we learn to provide sensible recommendations to the public and private sectors in an effort to steer humanity in a positive direction.</p>
+				</div> <!-- /.section-heading -->
+			</div>
+		</div>	<!-- /.row -->
+
+	</div>
+</section>
+
+<section class="secondary-bg text-center padding-120-75" id="what-we-think">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
+
+				<div class="section-heading">
+					<h2 class="heading-text">What We Think<span style="color: #037cb9">.</span></h2>
+					<p>At inphase.ai, we like to think deeply about artificial intelligence; not only about the technical aspects, but also about the potential economic, ethical, and existential implications. We feel that there is a shortage of rational debate on the topic and are committed to providing logical and consistent commentary.</p>
+					<p>At the same time, the breadth of our thinking allows us to confidently progress with our own research in the knowledge that we are being as socially responsible as we can.</p>
+				</div> <!-- /.section-heading -->
+			</div>
+		</div>	<!-- /.row -->
+
+	</div>
+</section>
+
+
 <!-- =========================
      FOOTER
 ============================== -->
-<footer class="footer-3 white-bg">
+<footer class="footers footer-2 text-center">
 	<div class="container">
-		<p class="copyright text-center">&copy; 2017 inphase.ai. All Rights Reserved</p>
+		<div class="row">
+			<div class="col-sm-6 mb30">
+
+				<p class="copyright">&copy; <a href="http://inphase.ai">inphase.ai</a> All rights reserved.</p>
+
+			</div>
+			<div class="col-sm-6 mb30">
+
+				<ul class="socialize">
+					<!--<li><a href="#">
+						<i class="fa fa-facebook-square fa-3x"></i>
+					</a></li>-->
+
+					<li><a href="https://twitter.com/inphaseai">
+						<i class="fa fa-twitter-square fa-3x"></i>
+					</a></li>
+
+					<li><a href="https://www.linkedin.com/company/inphase.ai">
+						<i class="fa fa-linkedin-square fa-3x"></i>
+					</a></li>
+				</ul>
+
+			</div>
+		</div>	<!-- /.row -->
 	</div>
 </footer>
 
