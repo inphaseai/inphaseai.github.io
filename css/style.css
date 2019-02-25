@@ -10,7 +10,6 @@ body {
 }
 @media (min-width: 1920px) {
   .body-container {
-    width: 1920px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -178,7 +177,7 @@ button:focus {
 .btn {
   font-size: 20px;
   font-weight: 500;
-  border-radius: 27px;
+  border-radius: 17px;
   box-shadow: none;
   transition: all 0.3s;
   border: 0;
@@ -208,7 +207,7 @@ button:focus {
   color: #fff;
 }
 .btn-base:hover:after {
-  opacity: 1;
+  opacity: .4;
 }
 .btn-base span {
   position: relative;
@@ -224,7 +223,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 27px;
+  border-radius: 17px;
   transition: opacity 0.5s;
   z-index: 2;
   opacity: 0;
@@ -385,13 +384,13 @@ button:focus {
   color: #fff;
 }
 .image-bg {
-  background: url(../images/app-home-bg9-min.jpg);
-  background-position: center top;
+  background: url(../images/app-home-bg2.jpg);
+  background-position: center center;
   background-size: cover;
 }
 .dark-image-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/app-home-bg9-min.jpg);
-  background-position: center top;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/app-home-bg2.jpg);
+  background-position: center center;
   background-size: cover;
 }
 .section-video {
@@ -1112,9 +1111,9 @@ button:focus {
   fill: #fc5f45;
 }
 .result .success-msg,
-.result .error-msg {
+.result .error-msg,
+.result .error-validation-msg {
   text-align: center;
-  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -1533,4 +1532,27 @@ button:focus {
 .footer-5 .gallery-1 li {
   width: 33.33333333%;
   margin: 0;
+}
+
+
+
+
+/*
+|----------------------------------------------------------------------------
+| CUSTOM STYLES
+|----------------------------------------------------------------------------
+*/
+.col-md-6 {
+  padding: 0 30px 0 30px;
+}
+
+@media (max-width: 400px) {
+  
+  #logo {
+    display:none;
+  }
+}
+
+.grecaptcha-badge { 
+  visibility: hidden;
 }

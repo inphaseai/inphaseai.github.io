@@ -17,14 +17,14 @@
 	STYLESHEETS 
 	============================== -->
 	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- TYPOGRAPHY -->
 	<link rel="stylesheet" id="font-switch" href="css/typography.css">
 
 	<!-- MAIN -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css?ver=1">
 
 	<!-- TEMPLATE COLORS -->
 	<link rel="stylesheet" id="color-switch" href="css/blue.css">
@@ -58,115 +58,256 @@
 	<meta name="msapplication-wide310x150logo" content="images/icon/mstile-310x150.png" />
 	<meta name="msapplication-square310x310logo" content="images/icon/mstile-310x310.png" />
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135097943-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-135097943-1');
+	</script>
 </head>
 <body class="body-container">
-<!-- =========================
-     NAVBAR 
-============================== -->
-<div class="navbar navbar-nemo navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			
-			<a class="navbar-brand" href="#">
-				<img src="images/logo-alt.png" alt="">
-			</a>
-		</div>
-
-		<div class="collapse navbar-collapse" id="nemo-navigation">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#what-we-do">What We Do</a></li>
-				<li><a href="#what-we-think">What We Think</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-
-<!-- =========================
-     HOME
-============================== -->
-<section class="base-home dark-image-bg gradient-overlay" id="home">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-1 mb50 col-md-push-5">
+	<!-- =========================
+		NAVBAR 
+	============================== -->
+	<div class="navbar navbar-nemo navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
 				
-				<h1 class="heading-text">Intentional Machine Intelligence</h1>
-
+				<a class="navbar-brand" href="#">
+					<img src="images/logo-alt.png" alt="">
+				</a>
 			</div>
 
-			<div class="col-md-5 mb50 col-md-pull-7">
-				<img src="images/logo.png" style="margin: 0 auto;" alt="" class="img-responsive img-center">
-			</div>
-
-		</div>	<!-- /.row -->
-	</div>
-</section>
-
-<section class="white-bg text-center padding-120-75" id="what-we-do">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
-				<div class="section-heading">
-
-					<h2 class="heading-text">What We Do<span style="color: #037cb9">.</span></h2>
-					<p>Inphase.ai is focussed on building the next generation of intelligent machines. Although we understand the current excitement surrounding deep neural networks, we believe that this is but one possible method of machine learning, and are interested in pursuing alternatives that don't rely so heavily on traditional designs.</p>
-					<p>We are working on a unique approach which we believe could be the foundation of an artificial general intelligence. Regardless of whether we are correct, we are concerned about the potential implications of such an innovation, and so are committed to using what we learn to provide sensible recommendations to the public and private sectors in an effort to steer humanity in a positive direction.</p>
-				</div> <!-- /.section-heading -->
-			</div>
-		</div>	<!-- /.row -->
-
-	</div>
-</section>
-
-<section class="secondary-bg text-center padding-120-75" id="what-we-think">
-	<div class="container">
-
-		<div class="row">
-			<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
-
-				<div class="section-heading">
-					<h2 class="heading-text">What We Think<span style="color: #037cb9">.</span></h2>
-					<p>We like to think deeply about artificial intelligence, not only about the technical aspects but also about the potential economic, ethical, and existential implications. We feel that there is a shortage of rational debate on the topic and are committed to providing logical and consistent commentary.</p>
-					<p>At the same time, the breadth of our thinking allows us to confidently progress with our own research in the knowledge that we are being as socially responsible as we can.</p>
-				</div> <!-- /.section-heading -->
-			</div>
-		</div>	<!-- /.row -->
-
-	</div>
-</section>
-
-
-<!-- =========================
-     FOOTER
-============================== -->
-<footer class="footers footer-2 text-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 mb30">
-
-				<p class="copyright">&copy; <a href="http://inphase.ai">inphase.ai</a> All rights reserved.</p>
-
-			</div>
-			<div class="col-sm-6 mb30">
-
-				<ul class="socialize">
-					<li><a href="https://www.facebook.com/inphaseai">
-						<i class="fa fa-facebook-square fa-3x"></i>
-					</a></li>
-
-					<li><a href="https://twitter.com/inphaseai">
-						<i class="fa fa-twitter-square fa-3x"></i>
-					</a></li>
-
-					<li><a href="https://www.linkedin.com/company/inphaseai">
-						<i class="fa fa-linkedin-square fa-3x"></i>
-					</a></li>
+			<div class="collapse navbar-collapse" id="nemo-navigation">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#research">Research</a></li>
+					<li><a href="#analytics">Analytics</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- =========================
+		HOME
+	============================== -->
+	<section class="base-home dark-image-bg gradient-overlay" id="home">
+		<div class="container mb50">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-1 mb50 col-md-push-5">
+					
+					<h1 class="heading-text">Intentional Machine Intelligence</h1>
+
+				</div>
+
+				<div class="col-md-5 mb50 col-md-pull-7">
+					<img id="logo" src="images/logo.png" style="margin: 0 auto;" alt="" class="img-responsive img-center">
+				</div>
 
 			</div>
-		</div>	<!-- /.row -->
-	</div>
-</footer>
+		</div>
+	</section>
 
+	<section class="white-bg padding-120-75" id="research">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-heading">
+						<h2 class="heading-text">Research & Development<span style="color: #037cb9">.</span></h2>
+					</div> <!-- /.section-heading -->
+				</div>
+			</div>	<!-- /.row -->
+			<div class="row">
+				<div class="col-md-6 mb50">
+					<div class="section-heading">
+						<h5 class="title-text">What We Do<span style="color: #037cb9">.</span></h5>
+						<p>Inphase.ai is focussed on building the next generation of intelligent machines. Although we understand the current excitement surrounding deep neural networks, we believe that this is but one possible method of machine learning and are interested in pursuing alternatives that don't rely so heavily on traditional designs.</p>
+						<p>We are working on a unique approach which we believe could be the foundation of an artificial general intelligence. Regardless of whether we are correct, we are concerned about the potential implications of such an innovation, and so are committed to using what we learn to provide sensible recommendations to the public and private sectors.</p>
+					</div> <!-- /.section-heading -->
+				</div>
+				<div class="col-md-6 mb50">
+					<div class="section-heading">
+						<h5 class="title-text">What We Think<span style="color: #037cb9">.</span></h5>
+						<p>We like to think deeply about artificial intelligence, not only about the technical aspects but also about the potential economic, ethical, and existential implications. We feel that there is a shortage of rational debate on the topic and are committed to providing logical and consistent commentary.</p>
+						
+					</div>
+				</div>
+			</div>	<!-- /.row -->
+
+		</div>
+	</section>
+
+	<section class="secondary-bg padding-120-75" id="analytics">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-6 mb50">
+					<div class="section-heading">
+						<h2 class="heading-text">Analytics<span style="color: #037cb9">.</span></h2>
+						<p>Inphase.ai is primarily a research company. We are, however, completely self-funded. We finance our future research by offering consulting services that can provide value to customers today.</p>
+						<p>With Inphase Analytics, we build and manage data pipelines in the cloud. We have experience building data solutions for our internal systems as well as for customers. We provide strategic, architectural, and engineering services to help customers get the most from their data.</p>
+						
+					</div> <!-- /.section-heading -->
+				</div>
+				<div class="col-md-6 mb50" id="analytics-bullets">
+					<div class="media">
+						<div class="media-left">
+							
+							<i class="icon svg-icon-piechart icon-shape width-60 radius-20 icon-border-2"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M16 32c5.188 0 9.75-2.438 12.688-6.25l-12.688-9.75v-16c-8.813 0-16 7.188-16 16s7.188 16 16 16zM14 2.125v13.875c0 0.625 0.313 1.188 0.75 1.563l11 8.5c-2.625 2.5-6.063 3.938-9.75 3.938-7.75 0-14-6.25-14-14 0-7.063 5.25-12.875 12-13.875zM18.75 0.25v14.313l11.438 8.813c1.125-2.188 1.813-4.688 1.813-7.375 0-7.875-5.75-14.438-13.25-15.75z"></path> </svg> </i>
+
+						</div>
+						<div class="media-body">
+
+							<h5 class="title-text">Data Preparation</h5>
+							<p>We review your business requirements and available data and provide suggestions as to how we might turn what’s available into useful insights.</p>
+
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							
+							<i class="icon svg-basic-gear icon-shape width-60 radius-20 icon-border-2"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M26.563 10.125l3.125-3.125-4.688-4.688-3.125 3.125-2.375-0.813v-4.625h-7v4.625l-2.375 0.813-3.125-3.125-4.688 4.688 3.125 3.125-0.813 2.375h-4.625v7h4.625l0.813 2.375-3.125 3.125 4.688 4.688 3.125-3.125 2.375 0.813v4.625h7v-4.625l2.375-0.813 3.125 3.125 4.688-4.688-3.125-3.125 0.813-2.375h4.625v-7h-4.625zM31 18.5h-4.375l-1.188 3.625 2.875 2.875-3.313 3.313-2.875-2.875-3.625 1.188v4.375h-5v-4.375l-3.625-1.188-2.875 2.875-3.313-3.313 2.875-2.875-1.188-3.625h-4.375v-5h4.375l1.188-3.625-2.875-2.875 3.313-3.313 2.875 2.875 3.625-1.188v-4.375h5v4.375l3.625 1.188 2.875-2.875 3.313 3.313-2.875 2.875 1.188 3.625h4.375zM16 12.5c-1.938 0-3.5 1.563-3.5 3.5s1.563 3.5 3.5 3.5c1.938 0 3.5-1.563 3.5-3.5s-1.563-3.5-3.5-3.5zM16 18.5c-1.375 0-2.5-1.125-2.5-2.5s1.125-2.5 2.5-2.5c1.375 0 2.5 1.125 2.5 2.5s-1.125 2.5-2.5 2.5z"></path> </svg> </i>
+
+						</div>
+						<div class="media-body">
+
+							<h5 class="title-text">Data Processing</h5>
+							<p>We build end-to-end data pipelines, including data acquisition, extraction, cleaning, processing, storage, and visualisation.</p>
+
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							
+							<i class="icon svg-icon-easel icon-shape width-60 radius-20 icon-border-2"><!--?xml version="1.0" encoding="utf-8"?-->  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"> <path d="M 9 16.5 c 0.313 0 0.625 -0.125 0.813 -0.375 l 4.438 -5.688 l 3 3.563 c 0.188 0.188 0.375 0.313 0.75 0.313 c 0.313 0 0.563 -0.125 0.75 -0.313 l 7 -8.375 c 0.375 -0.375 0.313 -1.063 -0.125 -1.375 c -0.375 -0.375 -1.063 -0.313 -1.375 0.125 l -6.25 7.438 l -3.063 -3.625 c -0.188 -0.188 -0.563 -0.313 -0.75 -0.313 c -0.313 0 -0.625 0.125 -0.813 0.375 l -5.125 6.625 c -0.375 0.438 -0.25 1.063 0.188 1.438 c 0.188 0.125 0.375 0.188 0.563 0.188 Z M 31 0 h -28 c -0.563 0 -1 0.438 -1 1 s 0.438 1 1 1 h 1 v 18 c 0 1.125 0.875 2 2 2 h 10 v 3.125 l -5.688 5.125 c -0.375 0.375 -0.438 1 -0.063 1.438 c 0.375 0.375 1 0.438 1.438 0.063 l 4.313 -3.938 v 3.188 c 0 0.563 0.438 1 1 1 s 1 -0.438 1 -1 v -3.188 l 4.313 3.938 c 0.188 0.188 0.438 0.25 0.688 0.25 s 0.563 -0.125 0.75 -0.313 c 0.375 -0.438 0.313 -1.063 -0.063 -1.438 l -5.688 -5.125 v -3.125 h 10 c 1.125 0 2 -0.875 2 -2 v -18 h 1 c 0.563 0 1 -0.438 1 -1 s -0.438 -1 -1 -1 Z M 28 20 h -22 v -18 h 22 Z" /> </svg> </i>
+						
+						</div>
+						<div class="media-body">
+
+							<h5 class="title-text">Data Presentation</h5>
+							<p>We create visualisation solutions using industry standard tools. For more complex scenarios we can provide custom application development.</p>
+
+						</div>
+					</div>
+				</div>
+			</div>	<!-- /.row -->
+
+		</div>
+	</section>
+
+	<section class="contacts contact-us-2 padding-120-125 white-bg" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1">
+					<div class="section-heading text-center">
+
+						<h2 class="heading-text">Contact<span style="color: #037cb9">.</span></h2>
+					</div> <!-- /.section-heading -->
+				</div>
+			</div>	<!-- /.row -->
+
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					
+					<form action="https://inphaseaiweb.azurewebsites.net/api/Contact" id="contact-form" class="row">
+						<div class="col-md-4">
+							<div class="form-underlined">
+								<input type="text" name="name" class="form-control" placeholder="Your Name">
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="form-underlined">
+								<input type="email" name="email" class="form-control" placeholder="Your Email">
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="form-underlined">
+								<input type="text" name="subject" class="form-control" placeholder="Subject">
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="form-underlined">
+								<textarea rows="1" name="message" class="form-control" placeholder="Write your message here..."></textarea>
+							</div>
+						</div>
+
+						<div class="col-md-12 text-center">
+							<input type="hidden" id="captcha" name="captcha">
+							<button id="btnSend" class="btn btn-base btn-lg">Send Message</button>
+						</div>
+
+						<div class="result col-md-12 text-center">
+							<p class="success-msg"><i class="icon svg-check icon-xs"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M16 2.688c-7.375 0-13.313 5.938-13.313 13.313s5.938 13.313 13.313 13.313c7.375 0 13.313-5.938 13.313-13.313s-5.938-13.313-13.313-13.313zM16 28.25c-6.75 0-12.25-5.5-12.25-12.25s5.5-12.25 12.25-12.25c6.75 0 12.25 5.5 12.25 12.25s-5.5 12.25-12.25 12.25zM22.688 11.25l-8.563 8.313-3-3c-0.313-0.313-0.813-0.313-1.125 0s-0.313 0.813 0 1.125l3.563 3.563c0.125 0.125 0.313 0.188 0.563 0.188 0.188 0 0.375-0.063 0.5-0.188l9.125-8.875c0.375-0.313 0.375-0.813 0.063-1.125s-0.813-0.313-1.125 0z"></path> </svg> </i> Thanks! Your message has been sent.</p>
+							<p class="error-msg"><i class="icon svg-close-circle icon-xs"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M6.563 6.563c-5.188 5.188-5.188 13.688 0 18.875s13.688 5.188 18.875 0c5.188-5.188 5.188-13.625 0-18.875-5.188-5.188-13.625-5.188-18.875 0zM24.688 24.688c-4.813 4.75-12.563 4.75-17.375 0-4.75-4.813-4.75-12.563 0-17.375 4.813-4.75 12.563-4.75 17.375 0 4.75 4.813 4.75 12.563 0 17.375zM10.75 10l-0.813 0.75 5.313 5.25-5.25 5.25 0.75 0.75 5.25-5.25 5.25 5.25 0.75-0.75-5.25-5.25 5.313-5.25-0.813-0.75-5.25 5.25z"></path> </svg> </i> Sorry, Something went wrong!</p>
+							<p class="error-validation-msg"><i class="icon svg-close-circle icon-xs"><!--?xml version="1.0" encoding="utf-8"?-->  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"> <path d="M6.563 6.563c-5.188 5.188-5.188 13.688 0 18.875s13.688 5.188 18.875 0c5.188-5.188 5.188-13.625 0-18.875-5.188-5.188-13.625-5.188-18.875 0zM24.688 24.688c-4.813 4.75-12.563 4.75-17.375 0-4.75-4.813-4.75-12.563 0-17.375 4.813-4.75 12.563-4.75 17.375 0 4.75 4.813 4.75 12.563 0 17.375zM10.75 10l-0.813 0.75 5.313 5.25-5.25 5.25 0.75 0.75 5.25-5.25 5.25 5.25 0.75-0.75-5.25-5.25 5.313-5.25-0.813-0.75-5.25 5.25z"></path> </svg> </i> <span class="error-validation-text">Your email address is in an invalid format</span></p>
+						</div>
+					</form>
+				</div>
+			</div>	<!-- /.row -->
+			<div class="row">
+				<div class="col-md-12 mt30 text-center">
+						<small>This site is protected by reCAPTCHA and the Google 
+							<a href="https://policies.google.com/privacy">Privacy Policy</a> and
+							<a href="https://policies.google.com/terms">Terms of Service</a> apply.
+						</small>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- =========================
+		FOOTER
+	============================== -->
+	<footer class="footers footer-2 text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 mb30">
+
+					<p class="copyright">&copy; <a href="http://inphase.ai">inphase.ai</a> All rights reserved.</p>
+
+				</div>
+				<div class="col-sm-6 mb30">
+
+					<ul class="socialize">
+						<!--<li><a href="https://www.facebook.com/inphaseai">
+							<i class="fa fa-facebook-square fa-3x"></i>
+						</a></li>-->
+
+						<li><a href="https://twitter.com/inphaseai">
+							<i class="fa fa-twitter-square fa-3x"></i>
+						</a></li>
+
+						<li><a href="https://www.linkedin.com/company/inphaseai">
+							<i class="fa fa-linkedin-square fa-3x"></i>
+						</a></li>
+					</ul>
+
+				</div>
+			</div>	<!-- /.row -->
+		</div>
+	</footer>
+
+	<!-- =========================
+		SCRIPTS 
+	============================== -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="//www.google.com/recaptcha/api.js?render=6LfohpMUAAAAABGKwJHxFk593dmvtFK_RyKTNhOo"></script>
+	<script>
+		grecaptcha.ready(function() {
+			grecaptcha.execute('6LfohpMUAAAAABGKwJHxFk593dmvtFK_RyKTNhOo', {action: 'homepage'}).then(function(token) {
+				$("#captcha").val(token);
+			});
+		});
+	</script>
+	<script src="/js/application.js?ver=1"></script>
 </body>
 </html>
